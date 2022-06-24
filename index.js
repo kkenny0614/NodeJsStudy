@@ -1,6 +1,6 @@
-const server = require("./server"),
-    router = require("./router"),
-    requestHandlers = require("./requestHandlers");
+const server = require("./express-server/server"),
+    router = require("./express-server/router"),
+    requestHandlers = require("./express-server/requestHandlers");
 
 const handle = {};
 handle["/"] = requestHandlers.start;
